@@ -1,0 +1,26 @@
+body {background: #E7E7E7 url(../images/bg.jpg) repeat top center;}
+a {color: #2F96B4}
+
+.header {min-height: 100px;}
+.header img{margin-left: -24px;
+margin-top: 25px;}
+.header .pull-right {margin-top: 10px;}
+.header .link a {font-size: 16px; padding-left: 5px;}
+
+.content {min-height: 430px;}
+
+.footer {
+text-align: center;
+padding: 30px 0;
+margin-top: 10px;
+border-top: 1px solid #E5E5E5;
+background-color: whiteSmoke;
+}
+.footer-links li {
+display: inline;
+padding: 0 2px;
+}
+
+.box { padding: 20px; background-color: white; margin:0 0 20px;border-radius: 12px; text-align: center; }
+.box img { argin-bottom: 3px; border: 3px solid #fff; }
+.box-text{ margin-top: 10px; text-align: left;}

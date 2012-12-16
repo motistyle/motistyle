@@ -1,0 +1,97 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="css/site.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript">
+	$(function () {
+            // 9宫格
+            var trigger = null;
+            $('.box img').hover(function () {
+            	var $img = $(this);
+            	trigger = setTimeout(function () {
+            		$img.css('border', '3px solid #2F96B4');
+            		$img.css('opacity','0.5');
+            	}, 400);
+            }, function () {
+            	clearTimeout(trigger);
+            	$(this).css('border', '3px solid #fff');
+            	$(this).css('opacity','1');
+            });
+        });
+
+	</script>
+</head>
+<body>
+
+	<div class="container">
+		<div class="header">
+			<div class="pull-left">
+				<a href="index.html"><img alt="MotiStyle" src="images/logo.png" /></a>
+			</div>
+			<div class = "pull-right">
+				<div class="link pull-right">
+					<a href="#">登录</a>
+					<a href="#">注册</a>
+					<a href="#">用户支持</a>
+				</div>
+				<div class="navigation">
+					<div class="btn-toolbar pull-right">
+						<div style="float:right;margin-left:5px;">
+							<div class="input-append">
+								<input type="text" class="span2" placeholder="Search" style="margin-bottom: 0px;height:30px; border-color: #2F96B4">
+								<span class="add-on" style="border-color: #2F96B4"><i class="icon-search icon-white" style="background-position:-48px 2px;"></i></span>
+							</div>
+						</div>
+						<a class="btn btn-info dropdown-toggle" data-toggle="dropdown" href="#">
+							Popular
+							<span class="caret"></span>
+						</a>
+						<a class="btn btn-info">Recent</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="row">
+				<div class="span4">
+					<div class="box">
+						<a href="classA.html"><img style="0 auto" src="images/a.jpg" /></a>
+						<div class="box-text"><a href="classA.html">著名培训机构著名培训讲师著名课程AAA</a></div>
+					</div>
+					<div class="box"><img style="0 auto" src="images/b.jpg" />
+						<div class="box-text"><a href="#">著名培训机构著名培训讲师著名课程AAA</a></div>
+					</div>
+				</div>
+				<div class="span4">
+					<div class="box"><img style="0 auto" src="images/c.jpg" />
+						<div class="box-text"><a href="#">著名培训机构著名培训讲师著名课程AAA</a></div>
+					</div>
+					<div class="box"><img style="0 auto" src="images/d.jpg" />
+						<div class="box-text"><a href="#">著名培训机构著名培训讲师著名课程AAA</a></div>
+					</div>
+				</div>
+				<div class="span4">
+					<div class="box"><img style="0 auto" src="images/c.jpg" />
+						<div class="box-text"><a href="#">著名培训机构著名培训讲师著名课程AAA</a></div>
+					</div>
+					<div class="box"><img style="0 auto" src="images/d.jpg" />
+						<div class="box-text"><a href="#">著名培训机构著名培训讲师著名课程AAA</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="container">
+				<p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+				<ul class="footer-links">
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">资源提供</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+</body>
+</html>
