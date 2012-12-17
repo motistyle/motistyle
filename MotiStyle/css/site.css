@@ -24,3 +24,5 @@ padding: 0 2px;
 .box { padding: 20px; background-color: white; margin:0 0 20px;border-radius: 12px; text-align: center; }
 .box img { argin-bottom: 3px; border: 3px solid #fff; }
 .box-text{ margin-top: 10px; text-align: left;}
+
+.content .navigation { margin-bottom: 20px;} 
